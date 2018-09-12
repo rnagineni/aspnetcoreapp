@@ -1,0 +1,15 @@
+[Unit]
+Description= The .NET Web API App running on CentOS 7
+
+[Service]
+WorkingDirectory=/home/coresite
+ExecStart=/usr/share/dotnet/dotnet /home/coresite/coresamplesite.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+SyslogIdentifier=dotnet core -example
+User=apache
+Environment=ASPNETCORE_ENVIRONMENT=Production 
+
+[Install]
+WantedBy=multi-user.target
