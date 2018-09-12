@@ -1,0 +1,6 @@
+
+Youtube tutorial
+https://youtu.be/opENnhVo1Q0
+1. coresamplesite.zip is the solution
+2. coresite.service is the kestrel service configuration sample
+3. Net core site in CentOS from 0.pptx is the presentation
